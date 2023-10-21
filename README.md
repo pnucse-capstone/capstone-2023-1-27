@@ -4,6 +4,48 @@
 
 ### 2. 팀 소개
 
+<table>
+  <tr>
+    <td align="center">
+      <p><b>김은지</b></p>
+      <img src="https://github.com/publdaze.png" width="100px;" alt="publdaze"/>
+      <a href="https://www.github.com/publdaze"><p>@publdaze</p></a>
+    </td>
+    <td>
+      <ul>
+        <li>가로등 모니터링 서비스 프론트엔드 개발</li>
+        <li>가로등 모니터링 서비스 백엔드 개발</li>
+        <li>스마트 쓰레기통 서비스 백엔드 개발</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <p><b>이현</b></p>
+      <img src="https://github.com/hyuunnn.png" width="100px;" alt="hyuunnn"/>
+      <a href="https://www.github.com/hyuunnn"><p>@hyuunnn</p></a>
+    </td>
+    <td>
+      <ul>
+        <li>쿠버네티스 실습 및 구축</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <p><b>장서윤</b></p>
+      <img src="https://github.com/pipisebastian.png" width="100px;" alt="pipisebastian"/>
+      <br>
+      <a href="https://www.github.com/pipisebastian"><p>@pipisebastian</p></a>
+    </td>
+    <td>
+      <ul>
+        <li>쿠버네티스 실습 및 구축</li>
+        <li>스마트 쓰레기통 서비스 프론트엔드 개발</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 
 ### 3. 구성도
