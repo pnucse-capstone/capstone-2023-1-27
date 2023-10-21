@@ -1,0 +1,15 @@
+[submodule "StreetLamp-Frontend"]
+	path = StreetLamp-Frontend
+	url = https://github.com/Water9Tree/StreetLamp-Frontend
+[submodule "StreetLamp-Backend"]
+	path = StreetLamp-Backend
+	url = https://github.com/Water9Tree/StreetLamp-Backend
+[submodule "SmartTrashCan-Frontend"]
+	path = SmartTrashCan-Frontend
+	url = https://github.com/Water9Tree/SmartTrashCan-Frontend
+[submodule "SmartTrashCan-Backend"]
+	path = SmartTrashCan-Backend
+	url = https://github.com/Water9Tree/SmartTrashCan-Backend
+[submodule "Data-Generator"]
+	path = Data-Generator
+	url = https://github.com/Water9Tree/Data-Generator
