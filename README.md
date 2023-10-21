@@ -49,6 +49,8 @@
 
 
 ### 3. 구성도
+#### 전체 모니터링 시스템 구조
+<img src="https://github.com/pnucse-capstone/capstone-2023-1-27/assets/78250089/24a4cdda-a59c-4eea-aca6-284e74d25147" width="600" alt="모니터링 시스템 구조"/>
 
 
 
