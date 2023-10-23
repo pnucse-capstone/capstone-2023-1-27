@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: street-lamp-back
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: street-lamp-back
+  template:
+    metadata:
+      labels:
+        app: street-lamp-back
+    spec:
+      containers:
+        - name: smart-trash-can-back
+          image: pipisebastian/street_lamp_back:v5
+          env:
+            - name: MONGODB_URL
+              value: "mongodb://10.43.97.206:27017" # MONGODB IP 수정 필요
+            - name: JWT_SECRET_KEY
+              value: "key"
+          ports:
+            - containerPort: 3000
+          resources:
+            limits:
+              cpu: 2000m
+            requests:
+              cpu: 300m
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name : street-lamp-back
+spec:
+  selector:
+    app: street-lamp-back
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000

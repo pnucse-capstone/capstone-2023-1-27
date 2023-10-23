@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smart-trash-can-mongodb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smart-trash-can-mongodb
+  template:
+    metadata:
+      labels:
+        app: smart-trash-can-mongodb
+    spec:
+      containers:
+        - name: smart-trash-can-mongodb
+          image: mongo:4.4.8
+          ports:
+            - containerPort: 27017
+          volumeMounts:
+            - name: smart-trash-can-mongodb-volume
+              mountPath: /data/db
+      volumes:
+        - name: smart-trash-can-mongodb-volume
+          hostPath:
+            path: /db/smart_trash_can
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: smart-trash-can-mongodb
+spec:
+  ports:
+    - port: 27017
+      targetPort: 27017
+  selector:
+    app : smart-trash-can-mongodb

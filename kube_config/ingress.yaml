@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+ annotations:
+   nginx.ingress.kubernetes.io/rewrite-target: /$2
+ name: ingress-resource-3
+spec:
+ ingressClassName: nginx
+ rules:
+  - http:
+     paths:
+     - path: /smart-trash-can(/|$)(.*)
+       pathType: ImplementationSpecific
+       backend:
+         service:
+           name: smart-trash-can-back
+           port:
+             number: 80
+     - path: /street-lamp(/|$)(.*)
+       pathType: ImplementationSpecific
+       backend:
+         service:
+           name: street-lamp-back
+           port:
+             number: 80

@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smart-trash-can-data-generator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smart-trash-can-data-generator
+  template:
+    metadata:
+      labels:
+        app: smart-trash-can-data-generator
+    spec:
+      containers:
+        - name: smart-trash-can-data-generator
+          image: pipisebastian/data_generator:v3
+          env:
+            - name: MONGODB_URL
+              value: "mongodb://10.43.35.177:27017" # MONGODB IP 수정 필요
+            - name: JWT_SECRET_KEY
+              value: "key"
+          ports:
+            - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name : smart-trash-can-data-generator
+spec:
+  selector:
+    app: smart-trash-can-data-generator
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000

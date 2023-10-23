@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smart-trash-can-back
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: smart-trash-can-back
+  template:
+    metadata:
+      labels:
+        app: smart-trash-can-back
+    spec:
+      containers:
+        - name: smart-trash-can-back
+          image: pipisebastian/smart_trash_can_back:v3
+          env:
+            - name: MONGODB_URL
+              value: "mongodb://10.43.35.177:27017" # MONGODB IP 수정 필요
+            - name: JWT_SECRET_KEY
+              value: "key"
+          ports:
+            - containerPort: 3000
+          resources:
+            limits:
+              cpu: 2000m
+            requests:
+              cpu: 300m
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name : smart-trash-can-back
+spec:
+  selector:
+    app: smart-trash-can-back
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
