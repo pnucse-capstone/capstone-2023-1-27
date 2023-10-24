@@ -13,3 +13,6 @@
 [submodule "Data-Generator"]
 	path = Data-Generator
 	url = https://github.com/Water9Tree/Data-Generator
+[submodule "kube-config"]
+	path = kube-config
+	url = https://github.com/Water9Tree/kube-config
