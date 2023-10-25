@@ -76,10 +76,10 @@
 
 ### 5. 사용법
 
+* **쿠버네티스 환경 구축**은 <a href="https://github.com/Water9Tree/kube-config">README</a>를 참고한다.
 * **스마트 쓰레기통 백엔드 서버** 사용법은 <a href="https://github.com/Water9Tree/SmartTrashCan-Backend">README</a>를 참고한다.
 * **스마트 쓰레기통 프론트엔드 서버** 사용법은 <a href="https://github.com/Water9Tree/SmartTrashCan-Frontend">README</a>를 참고한다.
 * **가로등 서비스 백엔드 서버** 사용법은 <a href="https://github.com/Water9Tree/StreetLamp-Backend">README</a>를 참고한다.
 * **가로등 서비스 프론트엔드 서버** 사용법은 <a href="https://github.com/Water9Tree/StreetLamp-Frontend">README</a>를 참고한다.
 * **데이터 생성기**의 동작 방식 및 사용법은 <a href="https://github.com/Water9Tree/Data-Generator">README</a>를 참고한다.
-* **쿠버네티스 환경 구축**은 <a href="https://github.com/Water9Tree/kube-config">README</a>를 참고한다.
 
