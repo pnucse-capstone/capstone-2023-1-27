@@ -72,6 +72,7 @@
 
 ### 4. 소개 및 시연 영상
 
+[![2023년 전기 졸업과제 27 물구나무서서 코딩하기](http://img.youtube.com/vi/pNzkByYJeoI/1.jpg)](https://youtu.be/pNzkByYJeoI?si=Vni_icTsoGOhejJX)    
 
 
 ### 5. 사용법
